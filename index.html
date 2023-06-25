@@ -2,196 +2,208 @@
 <html lang="JP">
 
 <head>
-  <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <div class="dropdown">
-    <form class="theme-selector" action="">
-      <button class="theme-button">
-        <strong>Select a theme <span class="down">&#x25BC;</span></strong>
-      </button>
-      <div class="dropdown-options">
-        <fieldset>
-          <div class="opt">
-            <label for="d4">Classic D4</label>
-            <input type="radio" name="theme" id="d4">
+    <div class="dropdown">
+        <form class="theme-selector" action="">
+            <button class="theme-button">
+                <strong>Select a theme <span class="down">&#x25BC;</span></strong>
+            </button>
+            <div class="dropdown-options">
+                <fieldset>
+                    <div class="opt">
+                        <label for="d4">Classic D4</label>
+                        <input type="radio" name="theme" id="d4" checked>
+                    </div>
+
+                    <div class="opt">
+                        <label for="ri4">Ri4 Sunset</label>
+                        <input type="radio" name="theme" id="ri4">
+                    </div>
+                </fieldset>
+            </div>
+        </form>
+    </div>
+
+    <div class="logo">
+        <img class="event-logo" src="icons/logo.png">
+    </div>
+
+    <div class="dialogue-box">
+        <div class="pfp-box">
+            <img class="pfp" src="icons/icon_airi.png">
+        </div>
+        <div class="q-box">
+            <p class="username">
+                天野愛莉
+                <img class="unit-icon" src="icons/icon_coa.png">
+                <span class="usertag">@Amano_Airi</span>
+            </p>
+            <p>
+                Ah it's you, <i>Diggler-san</i>. Welcome to <strong>Season 2 Round 3 of Song Guessing</strong>.
+                Are you ready to take on the challengers in this round?
+            </p>
+
+            <p class="instructions">
+                As usual, we reccomend using a browser on PC with split screen so you can fill
+                in the answers as you go. Link to the answer sheet can be found down below.
+            </p>
+
+            <p class="instructions">
+                I'll let the <strong>LyriLily</strong> girls host you now.
+                Do remember to come to Cafe Vinyl. We have new menu items for you to try :)
+            </p>
+
+            <div class="audio-section">
+                <div>
+                    <a href="https://forms.gle/nPo61XbkqoSMYY2q7" target=”_blank”>
+                        <button class="ans">
+                            <strong>Open answer sheet in new tab</strong>
+                        </button>
+                    </a>
+                </div>
+                <div>
+                    <img class="airi-sign" src="icons/sign_airi.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dialogue-box">
+      <div class="pfp-box">
+          <img class="pfp" src="icons/icon_miiko.png">
+      </div>
+      <div class="q-box">
+          <p class="username">
+              竹下みいこ
+              <img class="unit-icon" src="icons/icon_ri4.png">
+              <span class="usertag">@Takeshita_Miiko</span>
+          </p>
+          <p>
+              Diggler-san, I hope you did well in the previous two rounds. 
+              Here's your warm-up clip for this round, Miiko hopes you keep having fun nano!
+          </p>
+          <div>
+              <audio controls id="song1">
+                  <source src="audio_clips/2-4-1_2s.mp3" type="audio/mp3">
+              </audio>
           </div>
-
-          <div class="opt">
-            <label for="ri4">Ri4 Sunset</label>
-            <input type="radio" name="theme" id="ri4" checked>
+          <div class="hint">
+              <img class="miigo-sign" src="icons/sign_miigo.png">
           </div>
-        </fieldset>
       </div>
-    </form>
   </div>
 
-  <div class="logo">
-    <img class="event-logo" src="icons/logo.png">
-  </div>
-
-  <div class="dialogue-box">
-    <div class="pfp-box">
-      <img class="pfp" src="icons/icon_miyu.png">
-    </div>
-    <div class="q-box">
-      <p class="username">
-        桜田美夢
-        <img class="unit-icon" src="icons/icon_ri4.png">
-        <span class="usertag">@Sakurada_Miyu</span>
-      </p>
-      <p>
-        Gokigenyou, Diggler-san! We heard you are looking for some hints for this round of Song Guessing.
-        Luckily, Haruna-chan has them all figured out and gathered longer clips for all of them. How kind of her! 
-      </p>
-      <div class="hint">
-        <img class="sign" src="icons/sign_miyu.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="dialogue-box">
-    <div class="pfp-box">
-      <img class="pfp" src="icons/icon_haruna.png">
-    </div>
-    <div class="q-box">
-      <p class="username">
-        春日春奈
-        <img class="unit-icon" src="icons/icon_ri4.png">
-        <span class="usertag">@Kasuga_Haruna</span>
-      </p>
-      <p>
-        Miyu-san... I am very flattered.
-      </p>
-      <div class="hint">
-        <img class="sign" src="icons/sign_haru.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="dialogue-box">
-    <div class="pfp-box">
-      <img class="pfp" src="icons/icon_kurumi.png">
-    </div>
-    <div class="q-box">
-      <p class="username">
-        白鳥胡桃
-        <img class="unit-icon" src="icons/icon_ri4.png">
-        <span class="usertag">@Shiratori_Kurumi</span>
-      </p>
-      <p>
-        Ehhhh? Iincho figured all of them out??? How could that be...?
-        Miiko-chan, we need better pranks next time!
-      </p>
-      <div class="hint">
-        <img class="sign" src="icons/sign_rumi.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="dialogue-box">
-    <div class="pfp-box">
-      <img class="pfp" src="icons/icon_haruna.png">
-    </div>
-    <div class="q-box">
-      <p class="username">
-        春日春奈
-        <img class="unit-icon" src="icons/icon_ri4.png">
-        <span class="usertag">@Kasuga_Haruna</span>
-      </p>
-      <p>
-        Kurumi-san, how many times have I told you that I am not the chairwoman?!
-        Diggler-san, please excuse the chaos. Here are longer clips in order. 
-        Hopefully these are helpful to you!
-      </p>
-      <div class="long-audio">
-        <div>
-          <h3>Longer clip #1<h3>
+    <div class="dialogue-box">
+        <div class="pfp-box">
+            <img class="pfp" src="icons/icon_kurumi.png">
         </div>
-        <div class="long-clip">
-          <audio controls id="song1">
-            <source src="audio_clips/2-4-1_4s.mp3" type="audio/mp3">
-          </audio>
+        <div class="q-box">
+            <p class="username">
+                白鳥胡桃
+                <img class="unit-icon" src="icons/icon_ri4.png">
+                <span class="usertag">@Shiratori_Kurumi</span>
+            </p>
+            <p>
+                The clip Miiko-chan showed you is too easy you say, Diggler-san?
+                Hmmm, Miiko-chan and I thought it would be a spectacular idea 
+                to spice things up a little bit now so - hehehe, we have two songs per clip now! 
+                Here, try my itazura-mix!
+            </p>
+            <div>
+                <audio controls id="song2">
+                    <source src="audio_clips/2-4-2_2s.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="hint">
+                <img class="rumi-sign" src="icons/sign_rumi.png">
+            </div>
         </div>
-      </div>
-      
-      <div class="long-audio">
-        <div>
-          <h3>Longer clip #2<h3>
-        </div>
-        <div class="long-clip">
-          <audio controls id="song2">
-            <source src="audio_clips/2-4-2_4s.mp3" type="audio/mp3">
-          </audio>
-        </div>
-      </div>
+    </div>
 
-      <div class="long-audio">
-        <div>
-          <h3>Longer clip #3<h3>
+    <div class="dialogue-box">
+        <div class="pfp-box">
+            <img class="pfp" src="icons/icon_miiko.png">
         </div>
-        <div class="long-clip"> 
-          <audio controls id="song3">
-            <source src="audio_clips/2-4-3_4s.mp3" type="audio/mp3">
-          </audio>
+        <div class="q-box">
+            <p class="username">
+                竹下みいこ
+                <img class="unit-icon" src="icons/icon_ri4.png">
+                <span class="usertag">@Takeshita_Miiko</span>
+            </p>
+            <p>
+                Itazura-mix! What a fun name nano! 
+                Miiko has her own itazura-mix for you also, Diggler-san.
+                Please let me know what you think of it!
+            </p>
+            <div>
+                <audio controls id="song3">
+                    <source src="audio_clips/2-4-3_2s.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="hint">
+                <img class="miigo-sign" src="icons/sign_miigo.png">
+            </div>
         </div>
-      </div>
+    </div>
 
-      <div class="hint">
-        <img class="sign" src="icons/sign_haru.png">
-      </div>
+    <div class="end">
+        <p class="end-message">End of Challenge</p>
     </div>
-  </div>
 
-  <div class="dialogue-box">
-    <div class="pfp-box">
-      <img class="pfp" src="icons/icon_miyu.png">
+    <div class="dialogue-box">
+        <div class="pfp-box">
+            <img class="pfp" src="icons/icon_kurumi.png">
+        </div>
+        <div class="q-box">
+            <p class="username">
+              白鳥胡桃
+              <img class="unit-icon" src="icons/icon_ri4.png">
+              <span class="usertag">@Shiratori_Kurumi</span>
+            </p>
+            <p>
+                Hehehe~ Miiko-chan, nice one! 
+                I bet Diggler-san will have a hard time with our itazura-mix.
+                I-I mean, Diggler-san, if you are stuck on some of the questions, iincho should be 
+                able to help you (unless she got pranked by us also ehehehe). Prank daiseikou!
+            </p>
+            <div class="hint">
+                <img class="rumi-sign" src="icons/sign_rumi.png">
+            </div>
+        </div>
     </div>
-    <div class="q-box">
-      <p class="username">
-        桜田美夢
-        <img class="unit-icon" src="icons/icon_ri4.png">
-        <span class="usertag">@Sakurada_Miyu</span>
-      </p>
-      <p>
-        Good luck, Diggler-san! I believe in you!
-      </p>
-      <div class="hint">
-        <img class="sign" src="icons/sign_miyu.png">
-      </div>
-    </div>
-  </div>
 
-  <div class="footer">
-    <div class="footer-text">
-      <h2>About this event</h2>
-      <p>
-        For detailed rules and important updates for this event, please check corresponding announcements in
-        <a class="server-link" href="http://discord.gg/D4DJ" target=”_blank”>D4DJ server</a>.
-      </p>
+    <div class="footer">
+        <div class="footer-text">
+            <h2>About this event</h2>
+            <p>
+                For detailed rules and important updates for this event, please check corresponding announcements in
+                <a class="server-link" href="http://discord.gg/D4DJ" target=”_blank”>D4DJ server</a>.
+            </p>
+        </div>
+        <div class="footer-text">
+            <h2>Any issues?</h2>
+            <p>Song clips aren't playing? Please contact Cho via Discord
+        </div>
     </div>
-    <div class="footer-text">
-      <h2>Any issues?</h2>
-      <p>Song clips aren't playing? Please contact Cho via Discord
-    </div>
-  </div>
 </body>
 
 <script>
-  let audio1 = document.getElementById("song1");
-  audio1.volume = 0.5;
+    let audio1 = document.getElementById("song1");
+    audio1.volume = 0.5;
 
-  let audio2 = document.getElementById("song2");
-  audio2.volume = 0.5;
+    let audio2 = document.getElementById("song2");
+    audio2.volume = 0.5;
 
-  let audio3 = document.getElementById("song3");
-  audio3.volume = 0.5;
+    let audio3 = document.getElementById("song3");
+    audio3.volume = 0.5;
 </script>
 
 </html>
